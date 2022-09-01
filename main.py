@@ -4,14 +4,6 @@ import decorators
 from collections import UserDict
 
 
-def _now():
-    return datetime.today()
-
-
-def _create_date(*, year, month, day):
-    return datetime(year=year, month=month, day=day).date()
-
-
 class Field:
     def __init__(self, value: str):
         self._value = None
